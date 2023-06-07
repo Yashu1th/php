@@ -1,4 +1,31 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="index.php" method="post">
+
+        <!-- <button>Order a Pizza</button> -->
+        <label for="username">username:</label>
+        <input type="text" name="username"> <br><br>
+        <label for="password">Password:</label>
+        <input type="password" name="password"> <br>
+        <input type="submit" value="login">
+    </form>
+
+
+</body>
+</html>  
+
 <?php
+echo $_POST["username"];
+echo $_POST["password"];
     echo "I love paneer butter masala <br>";
     echo "because it is finger licking good <br>";
     $a="yaswanth narikamalli";
@@ -23,6 +50,9 @@
 
     echo "is online:{$is_online} <br>";
     echo"for sale:{$for_sale} <br>";
+    $total=null;
+    $total=$e*$f;
+    echo"your total amount is \$ {$total}<br>";
 
 
 
@@ -32,18 +62,5 @@
     /* edhi 
     multi line
     comment mawa*/
-
+    
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <button>Order a Pizza</button>
-</body>
-</html>  
