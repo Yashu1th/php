@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="index.php" method="post">
+    <form action="index.php" method="get">
 
         <!-- <button>Order a Pizza</button> -->
         <label for="username">username:</label>
@@ -24,8 +24,9 @@
 </html>  
 
 <?php
-echo $_POST["username"];
-echo $_POST["password"];
+    // echo "{$_GET["username"]}<br>";
+    echo $_GET["password"];
+
     echo "I love paneer butter masala <br>";
     echo "because it is finger licking good <br>";
     $a="yaswanth narikamalli";
