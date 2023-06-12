@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="index.php" method="get">
+    <form action="index.php" method="post">
 
         <!-- <button>Order a Pizza</button> -->
         <label for="username">username:</label>
@@ -24,8 +24,8 @@
 </html>  
 
 <?php
-    // echo "{$_GET["username"]}<br>";
-    echo $_GET["password"];
+    echo "{$_POST["username"]}<br>";
+    echo $_POST["password"];
 
     echo "I love paneer butter masala <br>";
     echo "because it is finger licking good <br>";
@@ -54,7 +54,8 @@
     $total=null;
     $total=$e*$f;
     echo"your total amount is \$ {$total}<br>";
-
+    echo "yash";
+    echo "ramesh";
 
 
 
